@@ -1,0 +1,427 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Голоса России — машинный перевод для языков коренных народов</title>
+  <meta name="description" content="«Голоса России» — платформа машинного перевода на основе искусственного интеллекта для языков коренных и малочисленных народов России.">
+  <meta name="theme-color" content="#f5eee2">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <script>document.documentElement.classList.add("js");</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600&family=Noto+Serif+Display:wdth,wght@62.5..100,300..600&display=swap" rel="stylesheet">
+  <link rel="preload" as="image"
+        href="https://images.unsplash.com/photo-1776456373978-235e1c487678?auto=format&fit=crop&q=80&w=2400"
+        imagesrcset="https://images.unsplash.com/photo-1776456373978-235e1c487678?auto=format&fit=crop&q=80&w=1200 1200w,
+                     https://images.unsplash.com/photo-1776456373978-235e1c487678?auto=format&fit=crop&q=80&w=1800 1800w,
+                     https://images.unsplash.com/photo-1776456373978-235e1c487678?auto=format&fit=crop&q=80&w=2400 2400w,
+                     https://images.unsplash.com/photo-1776456373978-235e1c487678?auto=format&fit=crop&q=80&w=3200 3200w"
+        imagesizes="100vw">
+  <link rel="stylesheet" href="assets/styles.css?v=12">
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержанию</a>
+
+  <header class="nav" data-solid="false">
+    <div class="nav__inner container">
+      <nav class="nav__links nav__links--start" aria-label="Основная навигация">
+        <a href="#top">Главная</a>
+        <a href="#about">О проекте</a>
+        <a href="#translator">Переводчик</a>
+      </nav>
+      <a class="logo" href="#top" data-site="name">Голоса России</a>
+      <nav class="nav__links nav__links--end" aria-label="Разделы">
+        <a href="#goal">Цель</a>
+        <a href="#contact">Контакты</a>
+      </nav>
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="mobile-menu">
+        <span class="sr-only">Открыть меню</span>
+        <i data-lucide="menu" aria-hidden="true"></i>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobile-menu" hidden>
+      <nav class="container" aria-label="Меню">
+        <a href="#top">Главная</a>
+        <a href="#about">О проекте</a>
+        <a href="#translator">Переводчик</a>
+        <a href="#goal">Цель</a>
+        <a href="#contact">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="top" aria-labelledby="hero-title">
+    <img class="hero__img"
+         src="https://images.unsplash.com/photo-1776456373978-235e1c487678?auto=format&fit=crop&q=80&w=2400"
+         srcset="https://images.unsplash.com/photo-1776456373978-235e1c487678?auto=format&fit=crop&q=80&w=1200 1200w,
+                 https://images.unsplash.com/photo-1776456373978-235e1c487678?auto=format&fit=crop&q=80&w=1800 1800w,
+                 https://images.unsplash.com/photo-1776456373978-235e1c487678?auto=format&fit=crop&q=80&w=2400 2400w,
+                 https://images.unsplash.com/photo-1776456373978-235e1c487678?auto=format&fit=crop&q=80&w=3200 3200w"
+         sizes="100vw" width="2400" height="1600" fetchpriority="high"
+         alt="Чум и нарты в заснеженной тундре на закате">
+    <div class="hero__shade" aria-hidden="true"></div>
+    <div class="hero__content container">
+      <h1 class="hero__title" id="hero-title">Каждый язык&nbsp;— целый мир</h1>
+      <p class="hero__lead">Мы создаём технологии, которые помогают сохранить языки коренных народов России и делают языковое многообразие доступным каждому</p>
+      <div class="hero__actions">
+        <a class="btn btn--paper" href="#about">Узнать о проекте</a>
+        <a class="btn btn--outline-light" href="#translator">Попробовать переводчик</a>
+      </div>
+    </div>
+    <p class="hero__credit">Чум в тундре · фото Polina Koroleva</p>
+  </section>
+
+  <main id="main">
+
+    <section class="sheet sheet--paper section" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">О проекте</p>
+          <h2 class="h2" id="about-title">Технологии на службе культурного наследия</h2>
+        </header>
+
+        <div class="about">
+          <figure class="about__art">
+            <canvas id="halftone" role="img"
+                    aria-label="Полутоновый оттиск фотографии: рога оленя на переднем плане, вдали человек в традиционной одежде идёт по снежной тундре"
+                    data-src="https://images.unsplash.com/photo-1776456407567-553111287784?auto=format&fit=max&q=80&w=1600"></canvas>
+          </figure>
+          <div class="about__card reveal">
+            <p class="about__lead">«<span data-site="name">Голоса России</span>» — технологическая инициатива, которая разрабатывает платформу машинного перевода на основе искусственного интеллекта для языков коренных и малочисленных народов России.</p>
+            <p>Многие из этих языков почти не представлены в цифровой среде, и популярные сервисы перевода их не поддерживают.</p>
+            <p>Проект объединяет искусственный интеллект, компьютерную лингвистику и экспертизу в области культуры, чтобы эти языки стали доступнее в цифровом мире.</p>
+            <a class="link-arrow" href="#translator">Открыть переводчик <i data-lucide="arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sheet sheet--cocoa section" id="translator" aria-labelledby="translator-title">
+      <div class="container">
+        <header class="translator-head reveal">
+          <div class="translator-head__main">
+            <p class="eyebrow eyebrow--on-dark">Переводчик</p>
+            <h2 class="h2" id="translator-title">Каждый язык заслуживает того, чтобы его поняли</h2>
+          </div>
+          <div class="translator-head__aside">
+            <p class="translator-head__text">Переводите с русского на языки коренных народов России и другие языки платформы — и обратно, на русский.</p>
+            <p class="translator-head__status" id="tr-status">Загружаем список языков…</p>
+          </div>
+        </header>
+
+        <form class="translator reveal" id="translator-form" novalidate>
+          <div class="translator__bar" id="tr-bar">
+            <div class="translator__field" data-slot="from">
+              <span class="translator__label" id="tr-label-from">Перевести с</span>
+              <div class="translator__fixed" id="tr-base" aria-label="Базовый язык">Русский</div>
+            </div>
+            <button class="translator__swap" type="button" id="tr-swap" aria-label="Поменять направление перевода">
+              <i data-lucide="arrow-left-right" aria-hidden="true"></i>
+            </button>
+            <div class="translator__field" data-slot="to">
+              <span class="translator__label" id="tr-label-to">Перевести на</span>
+              <select class="translator__lang" id="tr-lang" aria-labelledby="tr-label-to"></select>
+            </div>
+          </div>
+          <p class="translator__direction" id="tr-direction" aria-live="polite"></p>
+
+          <div class="translator__notice" id="tr-notice" role="status" hidden></div>
+
+          <div class="translator__panes">
+            <div class="translator__pane">
+              <label class="sr-only" for="tr-input">Текст для перевода</label>
+              <textarea id="tr-input" maxlength="2000" rows="7" placeholder="Введите текст">Бабушка рассказывала нам сказки на родном языке</textarea>
+              <div class="translator__meta">
+                <span id="tr-count" class="tabular">47 / 2000</span>
+                <div class="translator__actions">
+                  <button class="btn-quiet" type="button" id="tr-clear" aria-label="Очистить текст"><i data-lucide="x" aria-hidden="true"></i><span class="btn-quiet__label">Очистить</span></button>
+                  <button class="btn btn--accent btn--sm" type="submit" id="tr-submit">Перевести</button>
+                </div>
+              </div>
+            </div>
+            <div class="translator__pane translator__pane--out">
+              <p class="translator__out" id="tr-output" aria-live="polite">Здесь появится перевод</p>
+              <div class="translator__meta">
+                <span class="translator__credit" id="tr-credit"></span>
+                <button class="btn-quiet" type="button" id="tr-copy" disabled><i data-lucide="copy" aria-hidden="true"></i><span>Копировать</span></button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="sheet sheet--paper section" id="problem" aria-labelledby="problem-title">
+      <div class="container problem">
+        <header class="problem__head reveal">
+          <p class="eyebrow">Проблема</p>
+          <h2 class="h2" id="problem-title">Почему это важно?</h2>
+        </header>
+        <ol class="problem__grid" role="list">
+          <li class="problem-card reveal">
+            <span class="problem-card__num">01</span>
+            <h3 class="problem-card__title">Языки под угрозой исчезновения</h3>
+            <p>Многие языки коренных народов могут исчезнуть, а вместе с ними — уникальные знания и традиции.</p>
+          </li>
+          <li class="problem-card reveal">
+            <span class="problem-card__num">02</span>
+            <h3 class="problem-card__title">Нехватка цифровых ресурсов</h3>
+            <p>Многие из этих языков почти не представлены в цифровой среде, а популярные сервисы перевода их часто не поддерживают.</p>
+          </li>
+          <li class="problem-card reveal">
+            <span class="problem-card__num">03</span>
+            <h3 class="problem-card__title">Языковые барьеры</h3>
+            <p>Без доступных инструментов перевода сложнее общаться, учиться и получать информацию.</p>
+          </li>
+          <li class="problem-card reveal">
+            <span class="problem-card__num">04</span>
+            <h3 class="problem-card__title">Утрата культурного наследия</h3>
+            <p>Когда исчезает язык, поколения теряют доступ к традиционным знаниям, устной истории, фольклору и культурной идентичности.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="sheet sheet--sand section" id="goal" aria-labelledby="goal-title">
+      <div class="container">
+        <header class="section-head section-head--wide reveal">
+          <p class="eyebrow">Цель</p>
+          <h2 class="h2" id="goal-title">Цель проекта — сохранить языковое многообразие</h2>
+        </header>
+
+        <div class="split reveal">
+          <div class="split__panel">
+            <p class="split__label">Главная цель</p>
+            <p class="split__statement">Создать доступный инструмент машинного перевода, который поможет сохранять и поддерживать языки коренных и малочисленных народов России.</p>
+          </div>
+          <figure class="split__photo">
+            <img src="https://images.unsplash.com/photo-1776456522564-9b6478f47738?auto=format&fit=crop&q=80&w=1400"
+                 srcset="https://images.unsplash.com/photo-1776456522564-9b6478f47738?auto=format&fit=crop&q=80&w=900 900w,
+                         https://images.unsplash.com/photo-1776456522564-9b6478f47738?auto=format&fit=crop&q=80&w=1400 1400w"
+                 sizes="(max-width: 900px) 100vw, 50vw" width="1400" height="1050" loading="lazy"
+                 alt="Оленевод смотрит на стадо оленей в заснеженной тундре на закате">
+          </figure>
+        </div>
+
+        <h3 class="subhead reveal">Задачи проекта</h3>
+        <ul class="goals" role="list">
+          <li class="goal reveal"><span class="goal__icon"><i data-lucide="archive" aria-hidden="true"></i></span><p>Собрать и систематизировать лингвистические данные</p></li>
+          <li class="goal reveal"><span class="goal__icon"><i data-lucide="plug" aria-hidden="true"></i></span><p>Подключить открытые сервисы машинного перевода</p></li>
+          <li class="goal reveal"><span class="goal__icon"><i data-lucide="panels-top-left" aria-hidden="true"></i></span><p>Создать понятный и доступный интерфейс</p></li>
+          <li class="goal reveal"><span class="goal__icon"><i data-lucide="languages" aria-hidden="true"></i></span><p>Поддержать перевод между разными языками и языковыми парами</p></li>
+          <li class="goal reveal"><span class="goal__icon"><i data-lucide="messages-square" aria-hidden="true"></i></span><p>Проверять качество перевода с носителями языка и лингвистами</p></li>
+          <li class="goal reveal"><span class="goal__icon"><i data-lucide="sprout" aria-hidden="true"></i></span><p>Развивать сервис и постепенно расширять список языков</p></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="sheet sheet--paper section" id="process" aria-labelledby="process-title">
+      <div class="container">
+        <header class="section-head section-head--split reveal">
+          <div>
+            <p class="eyebrow">Как это работает</p>
+            <h2 class="h2" id="process-title">От идеи — к цифровой платформе перевода</h2>
+          </div>
+          <p class="section-head__text">Проект проходит пять этапов: от изучения языков до открытой платформы перевода, которая продолжает развиваться после запуска.</p>
+        </header>
+        <ol class="steps" role="list">
+          <li class="step reveal">
+            <span class="step__node" aria-hidden="true"></span>
+            <span class="step__num">01</span>
+            <h3 class="step__title">Исследование</h3>
+            <p>Изучаем выбранные языки и существующие инструменты.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__node" aria-hidden="true"></span>
+            <span class="step__num">02</span>
+            <h3 class="step__title">Сбор данных</h3>
+            <p>Собираем, оцифровываем и систематизируем словари, тексты и параллельные материалы.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__node" aria-hidden="true"></span>
+            <span class="step__num">03</span>
+            <h3 class="step__title">Разработка</h3>
+            <p>Разрабатываем платформу и подключаем открытые сервисы машинного перевода.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__node" aria-hidden="true"></span>
+            <span class="step__num">04</span>
+            <h3 class="step__title">Тестирование</h3>
+            <p>Оцениваем качество перевода вместе со специалистами и носителями языка.</p>
+          </li>
+          <li class="step step--last reveal">
+            <span class="step__node" aria-hidden="true"></span>
+            <span class="step__num">05</span>
+            <h3 class="step__title">Запуск</h3>
+            <p>Открываем сервис и продолжаем его улучшать.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section section--tight-top" id="audience" aria-labelledby="audience-title">
+      <div class="container">
+        <header class="section-head section-head--row reveal">
+          <div>
+            <p class="eyebrow">Аудитория</p>
+            <h2 class="h2" id="audience-title">Для кого мы это создаём?</h2>
+          </div>
+          <div class="carousel-controls">
+            <button class="icon-btn" type="button" data-carousel="prev" aria-label="Предыдущие карточки"><i data-lucide="arrow-left" aria-hidden="true"></i></button>
+            <button class="icon-btn" type="button" data-carousel="next" aria-label="Следующие карточки"><i data-lucide="arrow-right" aria-hidden="true"></i></button>
+          </div>
+        </header>
+      </div>
+      <div class="carousel" id="audience-carousel" tabindex="0" aria-label="Аудитория проекта">
+        <ul class="carousel__track" role="list">
+          <li class="audience-card">
+            <div class="audience-card__img"><img src="https://images.unsplash.com/photo-1776456289944-a738c2c0380e?auto=format&fit=crop&q=80&w=800" width="800" height="1000" loading="lazy" alt="Мужчина в традиционной одежде стоит в заснеженной тундре"></div>
+            <h3 class="audience-card__title">Коренные народы и носители языков</h3>
+          </li>
+          <li class="audience-card">
+            <div class="audience-card__img"><img src="https://images.unsplash.com/photo-1776456388467-e92ab1be3a24?auto=format&fit=crop&q=80&w=800" width="800" height="1000" loading="lazy" alt="Ребёнок в традиционной зимней одежде на снегу"></div>
+            <h3 class="audience-card__title">Те, кто изучает язык предков</h3>
+          </li>
+          <li class="audience-card">
+            <div class="audience-card__img"><img src="https://images.unsplash.com/photo-1588075592405-d3d4f0846961?auto=format&fit=crop&q=80&w=800" width="800" height="1000" loading="lazy" alt="Дети сидят на полу в классе и слушают учителя"></div>
+            <h3 class="audience-card__title">Учителя, преподаватели и студенты</h3>
+          </li>
+          <li class="audience-card">
+            <div class="audience-card__img"><img src="https://images.unsplash.com/photo-1654124803041-79f3cc14a9db?auto=format&fit=crop&q=80&w=800" width="800" height="1000" loading="lazy" alt="Раскрытая старинная книга с печатным текстом"></div>
+            <h3 class="audience-card__title">Лингвисты и исследователи</h3>
+          </li>
+          <li class="audience-card">
+            <div class="audience-card__img"><img src="https://images.unsplash.com/photo-1465929639680-64ee080eb3ed?auto=format&fit=crop&q=80&w=800" width="800" height="1000" loading="lazy" alt="Читальный зал старинной библиотеки со стеллажами книг"></div>
+            <h3 class="audience-card__title">Культурные и образовательные учреждения</h3>
+          </li>
+          <li class="audience-card">
+            <div class="audience-card__img"><img src="https://images.unsplash.com/photo-1755719888682-ad2bfb48c93f?auto=format&fit=crop&q=80&w=800" width="800" height="1000" loading="lazy" alt="Женщина в праздничном национальном костюме на летнем празднике"></div>
+            <h3 class="audience-card__title">Все, кому интересно языковое многообразие</h3>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section--tight-top" id="geography" aria-labelledby="geo-title">
+      <div class="container">
+        <header class="section-head section-head--wide reveal">
+          <p class="eyebrow">Территория</p>
+          <h2 class="h2" id="geo-title">Соединяем языки по всей России</h2>
+        </header>
+        <div class="geo__map reveal">
+          <svg id="ru-map" role="img" aria-labelledby="ru-map-title" preserveAspectRatio="xMidYMid meet">
+            <title id="ru-map-title">Карта России с регионами проекта</title>
+          </svg>
+          <p class="geo__caption" id="geo-caption" aria-live="polite"></p>
+        </div>
+        <ul class="regions" id="region-cards" role="list" aria-label="Регионы распространения языков"></ul>
+      </div>
+    </section>
+
+    <section class="sheet sheet--sand section" id="impact" aria-labelledby="impact-title">
+      <div class="container">
+        <div class="impact-wrap">
+          <figure class="impact-photo reveal">
+            <img src="https://images.unsplash.com/photo-1755719888679-4f4434d45198?auto=format&fit=crop&q=80&w=1400"
+                 srcset="https://images.unsplash.com/photo-1755719888679-4f4434d45198?auto=format&fit=crop&q=80&w=900 900w,
+                         https://images.unsplash.com/photo-1755719888679-4f4434d45198?auto=format&fit=crop&q=80&w=1400 1400w"
+                 sizes="(max-width: 960px) 100vw, 50vw" width="1400" height="1750" loading="lazy"
+                 alt="Мужчина поднимает руки навстречу солнцу на летнем празднике">
+          </figure>
+          <div class="impact-body">
+            <header class="impact-head reveal">
+              <p class="eyebrow">Социальная значимость</p>
+              <h2 class="h2" id="impact-title">Больше, чем просто переводчик</h2>
+            </header>
+            <ul class="impact" role="list">
+              <li class="impact__item reveal"><span class="impact__num">01</span><p>Поддержка языкового и культурного многообразия</p></li>
+              <li class="impact__item reveal"><span class="impact__num">02</span><p>Доступ коренных сообществ к цифровым инструментам</p></li>
+              <li class="impact__item reveal"><span class="impact__num">03</span><p>Сокращение цифрового неравенства</p></li>
+              <li class="impact__item reveal"><span class="impact__num">04</span><p>Новые образовательные возможности</p></li>
+              <li class="impact__item impact__item--wide reveal"><span class="impact__num">05</span><p>Передача языка и культурного наследия будущим поколениям</p></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="facts">
+          <div class="facts__head reveal">
+            <h3 class="subhead">Факты и источники</h3>
+            <p class="facts__text">Проверенные данные со ссылками на источники</p>
+          </div>
+          <ul class="facts__grid" id="evidence" role="list"></ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="sheet sheet--paper section" id="team" aria-labelledby="team-title">
+      <div class="container">
+        <header class="section-head section-head--wide reveal">
+          <p class="eyebrow">Команда</p>
+          <h2 class="h2" id="team-title">Люди, которые создают проект</h2>
+        </header>
+        <ul class="team" id="team-list" role="list"></ul>
+      </div>
+    </section>
+
+    <section class="sheet philosophy" id="philosophy" aria-labelledby="philosophy-quote">
+      <img class="philosophy__img"
+           src="https://images.unsplash.com/photo-1776456402239-645f58a2cda6?auto=format&fit=crop&q=80&w=2400"
+           srcset="https://images.unsplash.com/photo-1776456402239-645f58a2cda6?auto=format&fit=crop&q=80&w=1200 1200w,
+                   https://images.unsplash.com/photo-1776456402239-645f58a2cda6?auto=format&fit=crop&q=80&w=2400 2400w,
+                   https://images.unsplash.com/photo-1776456402239-645f58a2cda6?auto=format&fit=crop&q=80&w=3200 3200w"
+           sizes="100vw" width="2400" height="1600" loading="lazy"
+           alt="Стадо оленей бежит по заснеженной тундре под светлым вечерним небом">
+      <div class="container philosophy__inner">
+        <blockquote class="philosophy__quote reveal" id="philosophy-quote">
+          <p>Язык — больше, чем способ общения. Это память, культура и история целого народа.</p>
+        </blockquote>
+      </div>
+    </section>
+  </main>
+
+  <footer class="sheet sheet--cocoa footer" id="contact" aria-labelledby="contact-title">
+    <div class="container">
+      <div class="footer__top">
+        <h2 class="footer__title" id="contact-title">Напишите нам</h2>
+        <div class="footer__email" id="contact-email"></div>
+      </div>
+
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a class="logo logo--footer" href="#top" data-site="name">Голоса России</a>
+        </div>
+        <div>
+          <p class="footer__label">Соцсети</p>
+          <ul class="footer__list" id="contact-links" role="list"></ul>
+        </div>
+        <div>
+          <p class="footer__label">Авторы проекта</p>
+          <ul class="footer__list" id="contact-authors" role="list"></ul>
+        </div>
+        <div>
+          <p class="footer__label">Разделы</p>
+          <ul class="footer__list" role="list">
+            <li><a href="#about">О проекте</a></li>
+            <li><a href="#translator">Переводчик</a></li>
+            <li><a href="#goal">Цель</a></li>
+            <li><a href="#geography">Территория</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>© <span id="year">2026</span> «<span data-site="name">Голоса России</span>» · <span data-site="name-en">Voices of Russia</span></p>
+        <p>Фото: Polina Koroleva, haaska и другие авторы Unsplash. Контуры карты: Natural Earth. Машинный перевод: TartuNLP</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/data.js?v=12"></script>
+  <script src="assets/map-data.js?v=3"></script>
+  <script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js"></script>
+  <script src="assets/main.js?v=12"></script>
+</body>
+</html>
